@@ -3,6 +3,7 @@
 
 //REG OPERATIONS
 #define UINT32_1 ((uint32_t)1)
+#define UINT8_1 ((uint8_t)1)
 
 #define REG(addr) (*((volatile uint32_t *)(addr)))
 
@@ -64,7 +65,7 @@
 #define SYSCFGEN_BIT 14
 #define USART1EN 4
 
-//GPIO
+///////////////////GPIO
 #define GPIO_PORTA 0
 #define GPIO_PORTB 1
 #define GPIO_PORTC 2
@@ -95,7 +96,7 @@
 #define AFRLy_3_BIT(y) ((y)*4 + 3)
 #define AFRLy_0_BIT(y) ((y)*4)
 
-//EXTI
+/////////////////////EXTI
 #define EXTI_BASE 0x40013C00
 
 #define EXTI_IMR_OFFSET 0x00
@@ -114,7 +115,7 @@
 #define EXTI0_3_BIT 3
 #define EXTI0_0_BIT 0
 
-//USART1
+///////////////////////////USART1
 #define USART1_BASE 0x40011000
 
 #define USART_SR_OFFSET 0x00
